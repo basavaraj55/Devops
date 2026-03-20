@@ -6,3 +6,4 @@ git add .
 git log
 git tag "tag name"
 git push
+git pull
