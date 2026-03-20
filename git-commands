@@ -1,0 +1,8 @@
+git branch "branch_name"
+git checkout -a
+git remote -v
+git status
+git add .
+git log
+git tag "tag name"
+git push
