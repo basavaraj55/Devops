@@ -1,13 +1,23 @@
-node {
-    stage('Start') {
-        echo 'This is a Scripted Pipeline'
-    }
+pipeline {
+    agent any
 
-    stage('Build') {
-        echo 'Building the project...'
-    }
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building the project...'
+            }
+        }
 
-    stage('End') {
-        echo 'Pipeline Completed'
+        stage('Test') {
+            steps {
+                echo 'Running tests...'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application...'
+            }
+        }
     }
 }
